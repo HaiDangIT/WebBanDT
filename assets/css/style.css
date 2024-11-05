@@ -1,0 +1,357 @@
+/* navbar */
+.header-navbar
+{
+    position: fixed !important;
+    position: relative;
+    background-color: var(--primary-color);
+    height: var(--height1);
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+/* submenu */
+.nav-categories-submenu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 400px;
+    width: 100%;
+    background-color: var(--primary-color);
+    z-index: 100;
+}
+.nav-submenu-open{
+    position: relative;
+}
+.nav-submenu-open::after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 18px;
+    background-color: var(--primary-color);
+    top: 100%;
+    left: 0;
+}
+
+
+/* new */
+
+.nav-submenu-open:hover .nav-categories-submenu,
+.nav-categories-submenu:hover {
+    display: block;
+}
+/*  */
+
+/* .nav-categories-submenu-before::before{
+    position: absolute;
+    content: '';
+    display: block;
+    background-color: red;
+    top: -16px;
+    left: 0;
+    width: 100%;
+    height: 24px;
+} */
+.nav-link.nav-submenu-open:hover + .nav-categories-submenu {
+    display: block;
+}
+
+.submenu-lists{
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    margin-top: 0;
+}
+.submenu-lists a{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+.submenu-lists-item{
+    display: block;
+    margin-bottom: 14px;
+
+}
+.submenu-lists a:hover{
+    text-decoration: none;
+    color: var(--second-color);
+}
+.navbar-logo
+{
+    padding-left: 10px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu2
+{
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-link {
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    color: var(--white-color);
+}
+.nav-link:hover{
+    color: var(--second-color);
+}
+.navbar-nav1{
+    list-style: none;
+}
+.navbar-nav1 li{
+    margin: 0;
+    flex: 1;
+    display: inline-block;
+    padding: 0 10px;
+}
+.nav-categories-with-search {
+    padding: 10px;
+}
+.navbar_logo{
+    margin-top: 10px;
+    --size-img: 40px;
+    height: var(--size-img);
+}
+.navbar_logo-img{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border-radius: 6px;
+}
+.navbar-search-wrap{
+    width: 300px;
+}
+.navbar-search-input{
+    width: 100%;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.nav-item1-categories{
+    margin-right: 10px;
+}
+.navbar-nav1{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+
+/*  */
+
+/* Slide bar */
+
+#caroussel{
+    height: 506px;
+    margin: auto;
+    position: relative;
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+}
+
+
+.img-caroussel{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: inherit;
+    transition: opacity .5s;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    margin-top: 70px;
+}
+
+
+.img-caroussel.active{
+    opacity: 1;
+
+}
+
+.slider-position .round{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: transparent;
+    border: white solid 1px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.5s;
+}
+
+
+.slider-position .round.active{
+    background-color: white;
+}
+
+
+.slider-position .round:hover{
+    background-color: white;
+}
+
+.slider-position .round:last-child{
+    margin: 0;
+}
+
+
+.slider-position{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.credit{
+    background-color: rgba(228, 214, 214, 0.7) ;
+    padding: 10px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 200;
+    border-bottom-right-radius: 10px ;
+}
+/*  */
+
+/* Body page */
+
+#main-body {
+    min-height: calc(100vh - 600px);
+    padding: 5px 10px;
+}
+#main {
+    box-sizing: border-box;
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 80%;
+}
+
+/*  */
+
+/* container {san pham noi bat}*/
+
+.container1 h1
+{
+    display: block;
+   text-align: center;
+   padding: 25px 0;
+}
+.row
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+
+}
+/* .col-3-css
+{
+    display: flex;
+    flex-flow: column;
+    height: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    min-height: 202px;
+    padding: 10px;
+    position: relative;
+    width: auto;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .1), 0 2px 6px 2px rgba(60, 64, 67, .15);
+} */
+.col-3 .product_info
+{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    min-height: 202px;
+    padding: 16px;
+    position: relative;
+    width: auto;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .1), 0 2px 6px 2px rgba(60, 64, 67, .15);
+}
+
+.product_info .product_img
+{
+    text-align: center;
+    width: 100%;
+    
+}
+
+.product_img1
+{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* BLOG CONG NGHE */
+
+.blogcongnghe
+{
+    background-color: #ECCEAE;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+/*  */
+
+/* footer - start */
+#footer {
+    color: var(--fouth-color); 
+    background-color: var(--primary-color);
+}
+.footer-contact{
+    list-style: none;
+    padding-left: 0;
+}
+.footer-contact-icon{
+    margin-right: 8px;
+}
+.footer-text{
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+.footer-text-title{
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: var(--light);
+}
+.footer-social{
+   padding-left: 18px;
+}
+.footer-social-link{
+
+}
+.footer-social-link:hover{
+    text-decoration: none;
+}
+.footer-social-link:hover .footer-social-icon{
+    text-decoration: none;
+    color: var(--second-color);
+}
+.footer-social-icon{
+    font-size: 18px;
+    color: var(--fouth-color);
+    margin-right: 12px;
+}
+.footer-bottom{
+    padding-bottom: 20px;
+}
+.footer-bottom>p{
+    text-align: center; 
+    margin: 0px;
+    color: var(--fouth-color)
+}
+/* footer - end */
